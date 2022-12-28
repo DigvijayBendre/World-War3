@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #000116;
+}
+
+.card3d {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    transform-style: preserve-3d;
+}
+
+.card3d .face {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1.7s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.migration {
+    background-image: url('res/migration.png');
+}
+
+.education {
+    background-image: url('res/edu.JPG');
+}
+
+.environment {
+    background-image: url('res/env.JPG');
+}
+
+.displacement {
+    background-image: url('res/disp.JPG');
+}
+
+.infrastructure {
+    background-image: url('res/inf.JPG');
+}
+
+.russia {
+    background-image: url('res/russia-ukraine.PNG');
+}
+
+.taiwan {
+    background-image: url('res/taiwan.png');
+}
+
+.water {
+    background-image: url('res/water.PNG');
+}
+
+.enmity {
+    background-image: url('res/enmity.jpg');
+}
+
+.respect {
+    background-image: url('res/respect.JPG');
+}
+
+.injustice {
+    background-image: url('res/injustice.JPG');
+}
+
+.forgive {
+    background-image: url('res/forgive.JPG');
+}
+
+.belligerence {
+    background-image: url('res/belligerence.JPG');
+}
+
+.emotional {
+    background-image: url('res/emotional.JPG');
+}
+
+.understand {
+    background-image: url('res/understand.JPG');
+}
+
+.religion {
+    background-image: url('res/religion.JPG');
+}
+
+.fear {
+    background-image: url('res/fear.JPG');
+}
+
+.wrong {
+    background-image: url('res/wrong.jpg');
+}
+
+.worldwartwo {
+    background-image: url('res/ww2.PNG');
+}
+
+.sinojapantwo {
+    background-image: url('res/sino.PNG');
+}
+
+.taipingcw {
+    background-image: url('res/taip.JPG');
+}
+
+.worldwarone {
+    background-image: url('res/ww1.PNG');
+}
+
+
+.card3d:hover .face.front {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card3d .face.back {
+    /* background: -webkit-linear-gradient(139deg, #3e30ff 0%, #a35cff 100%); */
+    color: #fff;
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card3d:hover .face.back {
+    transform: perspective(500px) rotateY(360deg);
+}
+
+.card3d .face p {
+    /* text-transform: uppercase; */
+    transform: perspective(500px) translateZ(50px);
+}
+
+.card3d {
+    margin: 17px auto;
+    background-repeat: no-repeat;
+}
+
+.card-container {
+    display: flex;
+}
+
+.card-container p {
+    color: #fff;
+    width: 50%;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.migration-bk {
+    background: -webkit-linear-gradient(139deg, #3e30ff 0%, #a35cff 100%);
+}
+
+.russia-bk {
+    background: -webkit-linear-gradient(139deg, #ffa69e 0%, #861657 100%);
+}
+
+.taiwan-bk {
+    background: -webkit-linear-gradient(139deg, #cb218e 0%, #6617cb 100%);
+
+}
+
+.water-bk {
+    background: -webkit-linear-gradient(139deg, #b621fe 0%, #1fd1f9 100%);
+}
+
+.taiwan p {
+    color: #cb218e;
+}
+
+.russia p {
+    color: #ffa69e;
+}
+
+.water p {
+    color: #b621fe;
+}
+
+.migration p {
+    color: #a35cff;
+}
+
+.front p {
+    text-align: center;
+    font-size: 40px;
+}
+
+.back p {
+    text-align: center;
+    font-size: 10px;
+    width: 300px;
+}
+
+.face p {
+    color: #fff;
+}
+
+.face {
+    border-radius: 25px;
+}
+
+.front p {
+    width: 380px;
+    /* color: #000116; */
+}
+
+@media (max-width: 890px) {
+    .card-container {
+        display: block;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .card3d {
+        width: auto;
+    }
+
+    .face p {
+        width: 75%;
+    }
+
+}
